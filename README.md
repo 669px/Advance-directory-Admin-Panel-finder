@@ -42,4 +42,4 @@ It scans directories, finds hidden endpoints, detects admin panels, and supports
 git clone https://github.com/haiderlinux/haider-tools.git
 cd haider-tools
 pip install -r requirements.txt
-python haider_tools.py
+python haider.py
