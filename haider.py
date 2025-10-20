@@ -800,7 +800,7 @@ class AdvancedScanner:
         
         if scan_type in ['full', 'directories']:
             with ThreadPoolExecutor(max_workers=self.threads) as executor:
-                futures = {executor.submit(self.scan_path, path): path for path in 
+                futures = {executor.submit(self.scan_path, path): path for path in wordlist}
                 
                 with Live(self.console.print("Initializing..."), refresh_per_second=2) as live:
                     for future in as_completed(futures):
